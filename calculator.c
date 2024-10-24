@@ -19,6 +19,13 @@ float divide(int i, int j) {
     }
     return ((float) i / j);  // Explicit type casting to float for decimal results.
 }
+double square(double x) {
+    return x * x;
+}
+
+double cube(double x) {
+    return x * x * x;
+}
 
 int main() {
     int a, b;
@@ -62,14 +69,14 @@ int main() {
                 }
                 break;
             case '^':
-                printf("Enter an integer: ");
+                printf("Enter a number: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("square of %d is %f\n",a,square(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("cube of %d is %f\n",a,cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
